@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+* {
+    font-family: 'Fraunces', normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+body {
+    background-color: #000;
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header > nav > ul{
+    display: flex;
+}
+
+header > nav > ul > li {
+    list-style-type: none;
+}
+
+header > nav > ul > li > a {
+    padding: 10px 15px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+header > nav > ul > li > a#highlight_contact {
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+header > nav > ul > li > a#highlight_contact:hover {
+    background-color: hsla(206, 4%, 67%, 0.822);
+    color: #fff;
+}
+
+section.header {
+    min-height: 85vh;
+    position: relative;
+    background-image: url(images/desktop/image-header.jpg);
+    background-color: #3DBEFF;
+    background-size: contain;
+    background-position-x: center;
+    z-index: -1;
+
+    padding-top: 8%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.0em;
+    letter-spacing: 8px;
+}
+
+section.header > h1 {
+    padding-bottom: 90px;
+    color: #fff;
+}
+
+main > section {
+    width: 100%;
+    float: left;
+}
+
+main > section > div {
+    float: left;
+    width: 50%;
+    height: 600px;
+    color: #000;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.clear {
+    clear: both;
+}
+
+main > section.sect1 > div.left,
+main > section.sect2 > div.right {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+main > section.sect1 > div.left > div,
+main > section.sect2 > div.right > div {
+    width: 60%;
+    margin-left: 20%;
+}
+
+main > section.sect1 > div.left > div > h1,
+main > section.sect2 > div.right > div > h1,
+main > section.sect3 > div > div > h1 {
+    color: rgb(31, 30, 30);
+    padding-bottom: 50px;
+}
+
+main > section.sect1 > div.left > div > h1,
+main > section.sect2 > div.right > div > h1 {
+    font-size: 2.6em;
+}
+
+main > section.sect1 > div.left > div > p,
+main > section.sect2 > div.right > div > p {
+    font-size: 1.0em;
+    line-height: 25px;
+    color: hsl(232, 10%, 55%);
+    padding-bottom: 50px;
+}
+
+main > section.sect1 > div.left > div > a,
+main > section.sect2 > div.right > div > a {
+    text-decoration: none;
+    color: rgb(31, 30, 30);
+    position: relative;
+    z-index: 100;
+}
+
+main > section.sect1 > div.left > div > a::before,
+main > section.sect2 > div.right > div > a::before {
+    content: '';
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 30%;
+    z-index: -1;
+}
+
+main > section.sect1 > div.left > div > a::before {
+    background-color: hsl(51, 100%, 49%);
+}
+main > section.sect2 > div.right > div > a::before {
+    background-color: hsl(7, 99%, 70%);
+}
+
+main > section.sect1 > div.left > div > a:hover::before,
+main > section.sect2 > div.right > div > a:hover::before {
+    opacity: 100%;
+}
+
+main > section.sect1 > div.right {
+    background-image: url(images/desktop/image-transform.jpg);
+}
+
+main > section.sect2 > div.left {
+    background-image: url(images/desktop/image-stand-out.jpg);
+}
+
+main > section.sect3 > div.left {
+    background-image: url(images/desktop/image-graphic-design.jpg);
+}
+
+main > section.sect3 > div.right {
+    background-image: url(images/desktop/image-photography.jpg);
+}
+
+main > section.sect3 > div{
+    position: relative;
+}
+
+main > section.sect3 > div > div{
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    bottom: 10%;
+    text-align: center;
+}
+
+main > section.sect3 > div > div > p {
+    line-height: 25px;
+}
+
+main > section.sect3 > div.left > div > p {
+    color: hsl(167, 40%, 24%);
+}
+
+main > section.sect3 > div.right > div > p {
+    color: hsl(198, 62%, 26%);
+}
+
+section.clients {
+    height: 700px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.clients > h1 {
+    margin-top: 150px;
+    font-size: 1.5em;
+    color: hsl(210, 4%, 67%);
+}
+
+section.clients > div {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    height: 90%;
+}
+
+section.clients > div > div {
+    max-width: 400px;
+    width: 28%;
+}
+
+section.clients > div > div:not(:last-child) {
+    margin-right: 40px;
+}
+
+section.clients > div > div > div.img {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+section.clients > div > div > div.img > img {
+    width: 70px;
+    clip-path: circle();
+}
+
+section.clients > div > div > p {
+    text-align: center;
+    color: hsl(232, 10%, 55%);
+    line-height: 25px;
+    margin-bottom: 60px;
+}
+
+section.clients > div > div > div:not(.img) {
+    text-align: center;
+}
+
+section.clients > div > div > div > p.function {
+    font-size: 0.8em;
+    margin-top: 10px;
+    color: hsl(210, 4%, 67%);
+}
+
+section.gallery {
+    float: left;
+    width: 100%;
+}
+
+section.gallery > img {
+    width: 25%;
+    float: left;
+}
+
+footer {
+    height: 300px;
+    background-color: hsl(168, 34%, 41%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer > div.logo {
+    margin: 80px 0 20px;
+}
+
+footer > div.logo > svg path {
+    fill: hsl(167, 40%, 24%);
+}
+
+footer > nav > ul{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-bottom: 60px;
+}
+
+footer > nav > ul > li {
+    cursor: pointer;
+    list-style-type: none;
+    color: hsl(167, 40%, 24%);
+}
+
+footer > nav > ul > li:hover {
+    color: #fff;
+}
+
+footer > div.mediaSociais {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer > div.mediaSociais > a:hover > svg path {
+    fill: #fff;
+}
+
+[data-anime] {
+    transition: .3s;
+    opacity: 0;
+}
+
+[data-anime="top"] {
+    transform: translate3d(0, 50px, 0);
+}
+
+[data-anime="bottom"] {
+    transform: translate3d(0, -50px, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+div.animate {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+}
